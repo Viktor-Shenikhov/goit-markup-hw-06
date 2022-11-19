@@ -403,13 +403,51 @@
             </a>
           </li>
         </ul>       
-          </div>          
+          </div> 
+          <form  class="signup" name="signup_form" autocomplete="on">
+            <label for="signup-mail" class="signup-mail">
+              Підпишіться на розсилку
+            </label>
+            <div class="email-wrapper">
+            <input class="fild-email" type="email" name="email" placeholder="E-mail" id="signup-mail">
+            <button  class="fild-submit" type="submit">Підписатися
+                <svg class="icon-send" width="24">
+                <use href="./images/icon.svg#icon-icon-send"></use>
+              </svg> 
+              
+             
+            </button>
+            </div>
+           
+          </form>
+                   
         </div>            
             
        </div>     
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <form name="modal-form" class="modal-form">
+            <p>Залиште свої дані, ми вам передзвонимо</p>
+            <label for="user-name" name="user-name">Ім'я</label>
+            <input type="text" name="user-name" id="user-name">
+            <label for="user-tel" name="user-tel">Телефон</label>
+            <input type="tel" name="user-tel" id="user-tel">
+            <label for="user-email" name="user-email">Пошта</label>
+            <input type="email" name="user-email" id="user-email">
+            <label for="feedback">Коментар</label>
+            <textarea name="user-feedback" id="feedback" placeholder="Введіть текст"></textarea>
+            <label name="agreement">
+              Погоджуюся з розсилкою та приймаю Умови договору
+              <input type="checkbox" name="agreement">
+              <a href="#">Умови договору</a>
+            </label>
+            
+            <button type="submit">Відправити</button>
+          </form>
+
+
+
           <button class="close" type="button" data-modal-close>
             <svg width="11" height="11">
               <use href="./images/icon.svg#icon-btn-close"></use>
